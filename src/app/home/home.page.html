@@ -1,0 +1,48 @@
+<ion-grid>
+  <ion-row>
+    <ion-col size="12">
+      <h2>LED 1</h2>
+  <ion-button [color]="ledstatus ? 'success' : 'danger'" [color]="ledstatusall ? 'success' : 'danger'" (click)="toogleState()">
+    <ion-icon [name]=" ledstatus? 'radio-button-off-outline': 'radio-button-on-outline'" [name]=" ledstatusall? 'radio-button-off-outline': 'radio-button-on-outline'"></ion-icon>
+    <!--
+    {{ledstatus ? 'Encendido': "Apagado"}}
+    {{ledstatusall ? 'Encendido ': " "}}
+    -->
+  </ion-button>
+    </ion-col>
+    <ion-col size="12">
+      <h2>LED 2</h2>
+  <ion-button shape="circle" [color]="ledstatus2 ? 'success' : 'danger'" [color]="ledstatusall ? 'success' : 'danger'" (click)="toogleState2()">
+    <ion-icon [name]=" ledstatus2? 'radio-button-off-outline': 'radio-button-on-outline'" [name]=" ledstatusall? 'radio-button-off-outline': 'radio-button-on-outline'"></ion-icon>
+    <!--{{ledstatus2 ? 'Encendido': "Apagado"}}
+    {{ledstatusall ? 'Encendido ': " "}}
+    -->
+  </ion-button>
+</ion-col>
+<ion-col size="12">
+  <h2>LED 3</h2>
+  <ion-button [color]="ledstatus3 ? 'success' : 'danger'" [color]="ledstatusall ? 'success' : 'danger'" (click)="toogleState3()">
+    <ion-icon [name]=" ledstatus3? 'radio-button-off-outline': 'radio-button-on-outline'" [name]=" ledstatusall? 'radio-button-off-outline': 'radio-button-on-outline'"></ion-icon>
+    <!--
+    {{ledstatus3 ? 'Encendido': "Apagado"}}
+    {{ledstatusall ? 'Encendido ': " "}}
+  -->
+  </ion-button>
+</ion-col>
+<ion-col size="12">
+  <h2>All LED'S</h2>
+  <ion-button [color]="ledstatusall ? 'success' : 'danger'" (click)="toogleStateall()">
+    <ion-icon [name]=" ledstatusall? 'radio-button-off-outline': 'radio-button-on-outline'"></ion-icon>
+    <!--
+    {{ledstatusall ? 'Encendido': "Apagado"}}
+    -->
+  </ion-button>
+</ion-col>
+  </ion-row>
+</ion-grid>
+
+
+<!-- 
+  <ion-button (click)="apagar()" expand="block" fill="clear" shape="round" >APAGAR</ion-button>
+  <ion-button (click)="encender()" expand="block" fill="clear" shape="round" >ENCENDER</ion-button>
+  -->
